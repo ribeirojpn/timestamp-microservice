@@ -49,6 +49,6 @@ http.createServer(function(req,res) {
 
     res.end();
   }
-}).listen(3000,function() {
+}).listen(process.env.PORT || 3000,function() {
   console.log('server on...');
 });
